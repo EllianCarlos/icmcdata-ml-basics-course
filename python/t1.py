@@ -13,7 +13,7 @@ df = pd.read_csv("../vinho.csv")
 shape = df.shape
 
 scaler = MinMaxScaler()
-scaler.fit(df)
+df[:] = scaler.fit_transform(df[:])
 target = 'is good'
 features = df.columns.to_list()
 features.remove(target)
