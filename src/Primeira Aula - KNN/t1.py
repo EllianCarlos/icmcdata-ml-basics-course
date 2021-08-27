@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.neighbors import KNeighborsClassifier
 
 
-df = pd.read_csv("../vinho.csv")
+df = pd.read_csv("vinho.csv")
 
 shape = df.shape
 
